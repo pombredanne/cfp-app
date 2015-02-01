@@ -82,7 +82,7 @@ CFPApp::Application.configure do
   config.action_mailer.default_options = {from: ENV['MAIL_FROM']}
 
   config.action_mailer.smtp_settings = {
-    :address        => ENV['MAIL_HOST'],
+    :address        => ENV['SMTP_HOST'],
     :port           => '587',
     :authentication => :plain,
     :user_name      => ENV['SMTP_USERNAME'],
