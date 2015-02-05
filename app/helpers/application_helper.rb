@@ -1,5 +1,9 @@
 module ApplicationHelper
 
+  def app_name
+    "GORUCO 2015 CFP"
+  end
+
   def title
     @title
   end

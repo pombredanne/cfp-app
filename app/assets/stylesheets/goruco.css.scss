@@ -1,0 +1,41 @@
+$headerbg: #cc2a41 ;
+$headerfg: white ;
+
+.navbar-inverse {
+
+  .logo {
+    height: 32px ;
+    width: 32px ;
+    padding: 0 ;
+    margin: 8px 8px 0 0 ;
+  }
+
+  background-color: $headerbg ;
+  font-weight: bold ;
+  font-family: "proxima-nova", sans-serif ;
+
+  .navbar-nav > li > a,
+  .navbar-nav > .dropdown > a .caret,
+  .navbar-brand
+  {
+    color: $headerfg ;
+    border-top-color: $headerfg ;
+    border-bottom-color: $headerfg ;
+    &:hover {
+      color: darken($headerfg, 20%);
+    }
+  }
+
+  .navbar-nav > .dropdown:hover > a .caret
+  {
+    border-top-color: darken($headerfg, 20%);
+    border-bottom-color: darken($headerfg, 20%);
+  }
+
+  .navbar-nav > .open > a,
+  .navbar-nav > .open > a:hover,
+  .navbar-nav > .open > a:focus,
+  {
+    background-color: lighten($headerbg, 10%) ;
+  }
+}
